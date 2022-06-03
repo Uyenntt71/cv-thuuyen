@@ -1,0 +1,13 @@
+.cardBorder {
+  border: 1px solid #ffffff !important;
+  border-radius: 10px !important;
+  -webkit-box-shadow: 13px 10px 8px -6px rgba(0, 0, 0, 0.73);
+  box-shadow: -5px 5px 15px rgba(0, 0, 0, 0.1);
+  width: 40%;
+  margin: auto;
+}
+
+.mainRow {
+  height: 100%;
+  margin-top: 15%;
+}
