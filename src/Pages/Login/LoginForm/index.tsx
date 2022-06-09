@@ -2,7 +2,7 @@ import { Button, Checkbox, Col, Form, Input, Row } from "antd";
 import React, { useEffect, useState } from "react";
 import { UserOutlined, LockOutlined, LoadingOutlined } from "@ant-design/icons";
 import { setToken, getToken } from "../../../utils/token";
-import { TOKEN } from "../../../utils/constant";
+import { PASS_WORD, TOKEN, USER_NAME } from "../../../utils/constant";
 import styles from "./index.module.css";
 import { Navigate } from "react-router-dom";
 
@@ -15,10 +15,21 @@ const LoginForm: React.FC = () => {
     setLogin(getToken() !== null);
   }, []);
 
+  // const generateToken = (username: string) => {
+  //   var u = {
+  //     name: username,
+  //   };
+  //   const token = jwt.sign(u, "token", {
+  //     expiresIn: 60 * 3, // expires in 24 hours
+  //   });
+
+  //   return "token";
+  // };
+
   const handleSubmit = (values: any) => {
     setLoading(true);
-    if (values.username === "uyen" && values.password === "Uyen@123") {
-      // console.log("match username and password");
+    if (values.username === USER_NAME && values.password === PASS_WORD) {
+
       setToken(TOKEN);
       setLogin(true);
     } else {
