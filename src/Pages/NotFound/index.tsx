@@ -1,11 +1,14 @@
 import { Button, Result } from "antd";
 import React from "react";
-import { Navigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const NotFound: React.FC = () => {
+  const navigate = useNavigate();
+
   const handleBackHome = () => {
-    return <Navigate to={{ pathname: "/home" }} />;
+    navigate("/");
   };
+  
   return (
     <Result
       status="404"

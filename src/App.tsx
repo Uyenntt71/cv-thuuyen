@@ -1,21 +1,17 @@
 import React from "react";
+import { Route, BrowserRouter, Routes } from "react-router-dom";
 import "./App.css";
-import Login from "./Pages/Login";
 import HomePage from "./Pages/Home";
-import { Routes, BrowserRouter as Router, Route } from "react-router-dom";
+import NotFound from "./Pages/NotFound";
 
 function App() {
   return (
-    <Router>
+    <BrowserRouter>
       <Routes>
-        <Route path="/login" element={<Login />} />
-        <Route
-          path={"/home"}
-          element={<HomePage path={"/home"} exact={false} />}
-        />
-        {/* <HomePage path={"/home"} exact={false}></HomePage> */}
+        <Route path="/" element={<HomePage />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
-    </Router>
+    </BrowserRouter>
   );
 }
 
