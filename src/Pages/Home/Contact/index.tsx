@@ -1,16 +1,17 @@
 import React from "react";
 import styles from "./index.module.css";
+import commonStyles from "./../index.module.css";
 import { Row, Col, Input, Button } from "antd";
 import { PhoneOutlined, MailOutlined } from "@ant-design/icons";
 import Map from "./Map";
 
 export default function Contact() {
   return (
-    <div className={styles.background}>
-      <Row className={styles.row}>
-        <div className={styles.h2}>Contact</div>
+    <div className={commonStyles.background}>
+      <Row className={commonStyles.row}>
+        <div className={commonStyles.h2}>Contact</div>
       </Row>
-      <Row className={styles.row}>
+      <Row className={commonStyles.row}>
         <Col span={11}>
           <div>
             <PhoneOutlined /> 033-560-6978

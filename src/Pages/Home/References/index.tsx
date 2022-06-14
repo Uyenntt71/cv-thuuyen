@@ -1,82 +1,51 @@
 import React from "react";
 import styles from "./index.module.css";
+import commonStyles from "./../index.module.css";
 import { Row, Col, Image } from "antd";
 import Avatar1 from "./../../../Images/avatar-male.png";
 import Avatar2 from "./../../../Images/avatar-female.png";
 
 export default function References() {
   return (
-    <div className={styles.background}>
-      <Row className={styles.row}>
-        <div className={styles.h2}>References</div>
+    <div className={commonStyles.background}>
+      <Row className={commonStyles.row}>
+        <div className={commonStyles.h2}>References</div>
       </Row>
-      <Row className={styles.row}>
+      <Row className={commonStyles.row}>
         <Col span={11}>
-          <Row style={{ position: "relative" }}>
+          <Row className={styles.avaRow}>
             <Image
               src={Avatar1}
               alt="Avatar"
               preview={false}
-              style={{ width: "225px" }}
+              className={styles.avatar}
             ></Image>
             <div>
-              <div
-                style={{
-                  position: "absolute",
-                  bottom: "3.25rem",
-                  fontWeight: "800",
-                }}
-              >
-                Aiyana
-              </div>
-              <div
-                style={{
-                  position: "absolute",
-                  bottom: "1.25rem",
-                  fontSize: "0.85rem",
-                  color: "#757575",
-                }}
-              >
-                CEO / Web Design Company
-              </div>
+              <div className={styles.h7}>Aiyana</div>
+              <div className={styles.h8}>CEO / Web Design Company</div>
             </div>
           </Row>
-          <div>
+          <div className={commonStyles.h5}>
             "Walter displays exemplary professionalism and is able to take on
             challenges. He learns quickly and is an asset to any team."
           </div>
         </Col>
         <Col span={11} offset={2}>
-          <Row style={{ position: "relative" }}>
+          <Row className={styles.avaRow}>
             <Image
               src={Avatar2}
               alt="Avatar"
               preview={false}
-              style={{ width: "225px" }}
+              className={styles.avatar}
             ></Image>
             <div>
-              <div
-                style={{
-                  position: "absolute",
-                  bottom: "3.25rem",
-                  fontWeight: "800",
-                }}
-              >
-                Alexander
-              </div>
-              <div
-                style={{
-                  position: "absolute",
-                  bottom: "1.25rem",
-                  fontSize: "0.85rem",
-                  color: "#757575",
-                }}
-              >
+              <div className={styles.h7}>Alexander</div>
+              <div className={styles.h8}>
                 Front-end Developer / Web Design Company
               </div>
             </div>
           </Row>
-          <div>
+          <div className={commonStyles.h5}>
             "Walter is a great co-worker and problem solver. He is quick to
             extend his helping hand and makes a good team player."
           </div>

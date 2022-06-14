@@ -1,13 +1,12 @@
-import React from "react";
-import styles from "./index.module.css";
+import commonStyles from "./../index.module.css";
 import { Row, Col, Progress } from "antd";
 export default function Skills() {
   return (
-    <div className={styles.background}>
-      <Row className={styles.row}>
-        <div className={styles.h2}>Professional Skills</div>
+    <div className={commonStyles.background}>
+      <Row className={commonStyles.row}>
+        <div className={commonStyles.h2}>Professional Skills</div>
       </Row>
-      <Row className={styles.row}>
+      <Row className={commonStyles.row}>
         <Col span={11}>
           <div>Java</div>
           <div>

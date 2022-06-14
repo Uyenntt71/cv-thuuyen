@@ -1,6 +1,8 @@
 import { Row, Col } from "antd";
 import React from "react";
 import styles from "./index.module.css";
+import commonStyles from "./../index.module.css";
+
 import {
   CalendarOutlined,
   MailOutlined,
@@ -11,16 +13,16 @@ import {
 
 export default function About() {
   return (
-    <div className={styles.background}>
-      <Row className={styles.row}>
+    <div className={commonStyles.background}>
+      <Row className={commonStyles.row}>
         <Col span={11}>
-          <div className={styles.h2}>About me</div>
+          <div className={commonStyles.h2}>About me</div>
         </Col>
         <Col span={11} offset={2}>
-          <div className={styles.h2}>Bio</div>
+          <div className={commonStyles.h2}>Bio</div>
         </Col>
       </Row>
-      <Row className={styles.row}>
+      <Row className={commonStyles.row}>
         <Col span={11}>
           <Row gutter={[10, 10]}>
             <div className={styles.aboutMe}>
