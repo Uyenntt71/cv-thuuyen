@@ -1,5 +1,4 @@
 import { Row, Col } from "antd";
-import React from "react";
 import styles from "./index.module.css";
 import commonStyles from "./../index.module.css";
 
@@ -10,6 +9,7 @@ import {
   PhoneOutlined,
   EnvironmentOutlined,
 } from "@ant-design/icons";
+import QueueAnim from "rc-queue-anim";
 
 export default function About() {
   return (
@@ -23,59 +23,71 @@ export default function About() {
         </Col>
       </Row>
       <Row className={commonStyles.row}>
-        <Col span={11}>
-          <Row gutter={[10, 10]}>
-            <div className={styles.aboutMe}>
-              Hello! Im Walter Patterson. I am passionate about UI/UX design and
-              Web Design. I am a skilled front-end developer and master of
-              graphic design tools such as Photoshop and Sketch. I am a quick
-              learner and a team worker that gets the job done.
-            </div>
-            <div className={styles.aboutMe}>
-              I can easily capitalize on low hanging fruits and quickly maximize
-              timely deliverables for real-time schemas.
-            </div>
-          </Row>
-        </Col>
-        <Col span={11} offset={2}>
-          <Row gutter={[8, 10]}>
-            <Col span={7}>
-              <div>
-                <CalendarOutlined />
-                &ensp;Age
+        <QueueAnim
+          key="queue"
+          leaveReverse
+          style={{
+            width: "100%",
+            display: "flex",
+            flexWrap: "wrap",
+          }}
+          duration={1500}
+          type="top"
+        >
+          <Col span={11} key="1">
+            <Row gutter={[10, 10]}>
+              <div className={styles.aboutMe}>
+                Hello! Im Walter Patterson. I am passionate about UI/UX design
+                and Web Design. I am a skilled front-end developer and master of
+                graphic design tools such as Photoshop and Sketch. I am a quick
+                learner and a team worker that gets the job done.
               </div>
-            </Col>
-            <Col span={12}>26</Col>
-            <Col span={7}>
-              <div>
-                <MailOutlined />
-                &ensp;Mail
+              <div className={styles.aboutMe}>
+                I can easily capitalize on low hanging fruits and quickly
+                maximize timely deliverables for real-time schemas.
               </div>
-            </Col>
-            <Col span={12}>nguyenuyendhcn@gmail.com</Col>
-            <Col span={7}>
-              <div>
-                <SkypeOutlined />
-                &ensp;Skype
-              </div>
-            </Col>
-            <Col span={12}>nguyenuyendhcn@gmail.com</Col>
-            <Col span={7}>
-              <div>
-                <PhoneOutlined />
-                &ensp;Phone
-              </div>
-            </Col>
-            <Col span={12}>033-560-6978</Col>
-            <Col span={7}>
-              <div>
-                <EnvironmentOutlined />
-                &ensp;Address
-              </div>
-            </Col>
-            <Col span={12}>Phuc Dien, Bac Tu Liem, Ha Noi</Col>
-          </Row>
-        </Col>
+            </Row>
+          </Col>
+          <Col span={11} offset={2} key="2">
+            <Row gutter={[8, 10]}>
+              <Col span={7}>
+                <div>
+                  <CalendarOutlined />
+                  &ensp;Age
+                </div>
+              </Col>
+              <Col span={12}>26</Col>
+              <Col span={7}>
+                <div>
+                  <MailOutlined />
+                  &ensp;Mail
+                </div>
+              </Col>
+              <Col span={12}>nguyenuyendhcn@gmail.com</Col>
+              <Col span={7}>
+                <div>
+                  <SkypeOutlined />
+                  &ensp;Skype
+                </div>
+              </Col>
+              <Col span={12}>nguyenuyendhcn@gmail.com</Col>
+              <Col span={7}>
+                <div>
+                  <PhoneOutlined />
+                  &ensp;Phone
+                </div>
+              </Col>
+              <Col span={12}>033-560-6978</Col>
+              <Col span={7}>
+                <div>
+                  <EnvironmentOutlined />
+                  &ensp;Address
+                </div>
+              </Col>
+              <Col span={12}>Phuc Dien, Bac Tu Liem, Ha Noi</Col>
+            </Row>
+          </Col>
+        </QueueAnim>
       </Row>
     </div>
   );

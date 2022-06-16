@@ -11,8 +11,13 @@
     "antd": "^4.20.6",
     "leaflet": "^1.8.0",
     "moment": "^2.29.3",
+    "rc-queue-anim": "^2.0.0",
+    "rc-scroll-anim": "^2.7.6",
+    "rc-texty": "^0.2.0",
+    "rc-tween-one": "^3.0.6",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
+    "react-lazyload": "^3.2.0",
     "react-leaflet": "^4.0.0",
     "react-router-dom": "^6.3.0",
     "react-scripts": "5.0.1",
@@ -47,6 +52,7 @@
   "devDependencies": {
     "@types/leaflet": "^1.7.10",
     "@types/react": "^18.0.12",
-    "@types/react-dom": "^18.0.5"
+    "@types/react-dom": "^18.0.5",
+    "@types/react-lazyload": "^3.2.0"
   }
 }

@@ -1,0 +1,10 @@
+.progress {
+	  animation: loader 2s;
+    animation-iteration-count: infinite;
+    transition-timing-function: linear;
+}
+
+@keyframes progress {
+  0% {width: 0%; left: 0; right: 0;}
+  100% {width: auto;left: 0;right: auto;}
+}

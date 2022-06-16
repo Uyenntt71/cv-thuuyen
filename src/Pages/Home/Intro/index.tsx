@@ -54,12 +54,12 @@ export default function Intro() {
             </a>
           </div>
           <div>
-            <Button className={styles.button} shape="round">
+            <a href="/material-resume.pdf" className={styles.button}>
               Download CV
-            </Button>
-            <Button className={styles.button} shape="round">
+            </a>
+            <a className={styles.button} href="#contact">
               Hire me
-            </Button>
+            </a>
           </div>
         </div>
       </div>
