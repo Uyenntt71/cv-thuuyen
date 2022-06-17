@@ -9,7 +9,7 @@ export default function Skills() {
   return (
     <div className={commonStyles.background}>
       <Row className={commonStyles.row}>
-        <div className={commonStyles.h2}>Professional Skills</div>
+        <div className={commonStyles.h2}>Technical Skills</div>
       </Row>
       <Row className={commonStyles.row}>
         <OverPack
@@ -126,35 +126,6 @@ export default function Skills() {
           </QueueAnim>
         </OverPack>
       </Row>
-      {/* <Row className={commonStyles.row}>
-        <OverPack>
-          <QueueAnim>
-            <Col span={11} key="item1">
-              <div>Java</div>
-              <div>
-                <Progress
-                  percent={75}
-                  strokeWidth={10}
-                  showInfo={false}
-                  trailColor={"#eee"}
-                />
-              </div>
-            </Col>
-            <Col span={11} offset={2} key="item2">
-              <div>PostgreSql</div>
-              <div>
-                <Progress
-                  percent={80}
-                  strokeWidth={10}
-                  showInfo={false}
-                  strokeColor={"purple"}
-                  trailColor={"#eee"}
-                />
-              </div>
-            </Col>
-          </QueueAnim>
-        </OverPack>
-      </Row> */}
     </div>
   );
 }

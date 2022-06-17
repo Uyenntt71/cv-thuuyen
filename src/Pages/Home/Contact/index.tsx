@@ -1,9 +1,10 @@
 import React from "react";
 import styles from "./index.module.css";
 import commonStyles from "./../index.module.css";
-import { Row, Col, Input, Button } from "antd";
+import { Row, Col, Input, Button, Form } from "antd";
 import { PhoneOutlined, MailOutlined } from "@ant-design/icons";
 import Map from "./Map";
+import ContactForm from "./ContactForm";
 
 export default function Contact() {
   return (
@@ -19,25 +20,9 @@ export default function Contact() {
           <div style={{ paddingBottom: "2rem" }}>
             <MailOutlined /> nguyenuyendhcn@gmail.com
           </div>
-          <div style={{ width: "100%", paddingBottom: "1rem" }}>
-            <Input name="name" placeholder="Name" bordered={true} />
-          </div>
-          <div style={{ width: "100%", paddingBottom: "1rem" }}>
-            <Input name="mail" placeholder="Mail" />
-          </div>
-          <div style={{ width: "100%", paddingBottom: "1rem" }}>
-            <Input.TextArea
-              name="message"
-              placeholder="Message"
-              allowClear={true}
-              rows={10}
-            />
-          </div>
-          <div style={{ width: "100%" }}>
-            <Button className={styles.button}>Send</Button>
-          </div>
+          <ContactForm />
         </Col>
-        <Col span={11} offset={2}>
+        <Col span={11} offset={2} style={{ paddingBottom: "1.1rem" }}>
           <Map />
         </Col>
       </Row>

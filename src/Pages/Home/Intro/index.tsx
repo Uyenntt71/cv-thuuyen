@@ -8,7 +8,7 @@ import {
   InstagramOutlined,
 } from "@ant-design/icons";
 
-import Avatar from "./../../../Images/avatar.jpg";
+import Avatar from "./../../../Images/avatar_uyen.jpg";
 
 export default function Intro() {
   return (
