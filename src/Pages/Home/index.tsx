@@ -54,7 +54,7 @@ export default function HomePage() {
           }}
           dataSource={nav}
           renderItem={(item) => (
-            <List.Item>
+            <List.Item className={commonStyles.h5}>
               <a href={`#${item.id}`}>{item.title}</a>
             </List.Item>
           )}

@@ -9,7 +9,7 @@ export default function Skills() {
   return (
     <div className={commonStyles.background}>
       <Row className={commonStyles.row}>
-        <div className={commonStyles.h2}>Technical Skills</div>
+        <div className={commonStyles.h2}>Professional Skills</div>
       </Row>
       <Row className={commonStyles.row}>
         <OverPack
